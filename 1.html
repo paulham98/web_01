@@ -7,6 +7,18 @@
   </head>
   <body>
     <h1><a href="WEB1.html">WEB</a></h1>
+    <input type="button" value="mode" onclick="
+      var target =document.querySelector('body');
+      if(this.value === 'mode') {
+        target.style.backgroundColor = 'black';
+        target.style.color='white';
+        this.value = 'day';
+      } else {
+          target.style.backgroundColor = 'white';
+          target.style.color='black';
+          this.value = 'mode';
+      }
+      ">
     <div id="grid">
       <ol>
         <li><a href="1.html" target="_blank">HTML</a></li>
